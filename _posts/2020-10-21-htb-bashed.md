@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Hack the Box - Bashed
-subtitle: Writeup for Bashed CTF - Easy
+subtitle: Easy Linux box with a backdoor and misconfigured permissions
 #cover-img: /assets/img/path.jpg
-#thumbnail-img: /assets/img/thumb.png
-#share-img: /assets/img/path.jpg
+thumbnail-img: /assets/img/htblogo.webp
+share-img: /assets/img/htblogo.webp
 tags: [htb, writeup]#
 ---
 
