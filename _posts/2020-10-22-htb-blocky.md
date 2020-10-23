@@ -191,7 +191,7 @@ After compiling and running we finally get root!
 
 ## The easy way
 
-This seems too much of work for an easy box right? Well, it is. The intended easy way to solve this machine is to try the MySQL root password obtained from the `jar` file into ssh for the user `notch`. This way we have direct ssh access without phpMyAdmin, Wordpress and kernel exploits. Since the user `notch` is also in the `sudoers` group and we have the password, we can instantly become root to
+This seems too much of work for an easy box right? Well, it is. The intended easy way to solve this machine is to try the MySQL root password obtained from the `jar` file into ssh for the user `notch` (the user who made a blog post on the site). This way we have direct ssh access without phpMyAdmin, Wordpress and kernel exploits. Since the user `notch` is also in the `sudoers` group and we have the password, we can instantly become root too.
 
 ```console
 # ssh notch@blocky.htb
