@@ -2,8 +2,8 @@
 layout: post
 title: Reversing a simple Unity Android game
 subtitle: Understanding how Unity games are structured and an introduction to reversing a Dll file
-thumbnail-img: /assets/img/htblogo.webp
-share-img: /assets/img/htblogo.webp
+thumbnail-img: /assets/img/reversing-unity/unity-logo.png
+share-img: /assets/img/reversing-unity/unity-logo.png
 tags: [reversing, android]#
 ---
 
